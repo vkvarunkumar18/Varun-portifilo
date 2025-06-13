@@ -1,0 +1,211 @@
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.profile-container {
+  background: linear-gradient(to left, #000000, #050505);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 5% 10px 5%;
+  gap: 40px; 
+  padding-bottom: 40px;
+  position: relative;
+overflow: hidden;
+
+}
+.profile-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(to right, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 150px 150px;
+  z-index: 0;
+}
+
+.profile-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+  gap: 40px; 
+  width: 100%; 
+
+}
+.profiletext {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 1;
+}
+.name {
+  font-size: 80px;
+  color: #ffffff;
+  font-weight: 600;
+  margin: 0;
+  
+}
+
+.font {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  color: #d7d7d7;
+  font-weight: 300;
+  line-height: 25px;
+  margin-top: 20px;
+  align-items: center;
+
+}
+.location {
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+  color: #b0b0b0;
+  font-weight: 500;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.photo {
+  display: flex;
+  justify-content: flex-end; 
+  height: 550px;
+  width: 400px;
+  flex-shrink: 0;
+  align-items: end;
+}
+
+
+#Varunimage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+
+
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+
+.socialmedia a {
+  color: #ffffff;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: transform 0.2s ease;
+}
+.socialmedia a:hover {
+  transform: scale(1.05);
+  text-decoration: underline;
+}
+
+@media (min-width: 769px) { 
+  .profile-container {
+    flex-direction: column; 
+    align-items: end; 
+  }
+  .main-content {
+    flex-direction: row; 
+  }
+}
+
+@media (max-width: 768px) { 
+  .profile-container {
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 30px 5%; /
+  }
+
+  .main-content {
+    flex-direction: column; 
+    align-items: center; 
+    
+  }
+
+  .photo {
+    margin-top: 40px;
+    width: 100%;
+    height: auto;
+  }
+
+  #Varunimage {
+    width: 100%;
+    height: auto;
+  }
+
+  .name {
+    font-size: 48px;
+  }
+
+  .font {
+    font-size: 15px;
+  }
+
+  .socialmedia {
+    gap: 24px;
+  }
+  .mine {
+    margin: 0 auto;
+    width:fit-content;
+    
+  }
+}
+.mine {
+  display: flex;
+  align-items: center;     
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #09111E; 
+  border-radius: 15px;     
+  height: 53px;
+  width: 400px;
+  gap: 15px;
+  border: 2px solid transparent;
+  background:
+    linear-gradient(#09111E, #09111E) padding-box, 
+    linear-gradient(to right, #737373, #ffffff) border-box;
+  background-origin: border-box; 
+  background-clip: padding-box, border-box; 
+}
+
+.new {
+  background: linear-gradient(to left, #737373, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  text-transform: uppercase;
+}
+
+.varun {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 0;
+}

@@ -1,0 +1,109 @@
+
+.skillsection {
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 50px; 
+}
+
+.skill {
+  margin-top: 200px;
+  font-size: 2.5rem;
+  font-weight: bold; 
+  background: linear-gradient(to bottom, #fafafa, #a3a3a3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+  text-align: center;
+  align-self: center; 
+}
+@media (min-width: 768px) {
+  .skill {
+    font-size: 3.75rem;
+  }
+}
+
+.skills-tab-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 900px;
+}
+
+.tab-skill-content {
+  width: 100%;
+  padding: 2rem;
+  border-radius: 1rem;
+  color: white;
+  background: linear-gradient(to bottom right, #3b82f6, #1e40af);
+  margin: 0 auto;
+
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1.5rem;
+  justify-items: center;
+  margin-top: 1rem;
+  width: 100%;
+}
+.skill-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.skill-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.skill-label {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+}
+
+button[data-state="inactive"] {
+  color: white !important; 
+  opacity: 0.6;
+  font-weight: 600; 
+}
+button[data-state="active"] {
+  color: white !important;
+  font-weight: 600;
+}
+.skillname {
+  font-size: 1.1rem;
+  color: #a3a3a3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  gap: 0.75rem;
+}
+@media (min-width: 768px) {
+  .skillname {
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+    gap: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .skillname {
+    font-size: 1.35rem;
+    margin-bottom: 2.5rem;
+    gap: 1.25rem;
+  }
+}
