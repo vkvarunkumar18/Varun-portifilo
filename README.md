@@ -44,20 +44,6 @@ You’ll find sections for:
 
 ---
 
-## 📸 Screenshots
-
-_Include some screenshots here if you want for visual preview._
-
----
-
-## 📈 Future Improvements
-
-- Blog section for tech writeups and design breakdowns
-- Dark/light theme toggle
-- CMS integration for easier content updates
-- Add more AI-based apps and experiments
-
----
 
 ## 📬 Contact
 
